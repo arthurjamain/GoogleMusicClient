@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "66B4BF4B189049AE00353166"
-               BuildableName = "GoogleMusicClient.app"
-               BlueprintName = "GoogleMusicClient"
-               ReferencedContainer = "container:GoogleMusicClient.xcodeproj">
+               BuildableName = "Google Music Client.app"
+               BlueprintName = "Google Music Client"
+               ReferencedContainer = "container:Google Music Client.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "66B4BF6C189049AE00353166"
-               BuildableName = "GoogleMusicClientTests.xctest"
-               BlueprintName = "GoogleMusicClientTests"
-               ReferencedContainer = "container:GoogleMusicClient.xcodeproj">
+               BuildableName = "Google Music ClientTests.xctest"
+               BlueprintName = "Google Music ClientTests"
+               ReferencedContainer = "container:Google Music Client.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66B4BF4B189049AE00353166"
-            BuildableName = "GoogleMusicClient.app"
-            BlueprintName = "GoogleMusicClient"
-            ReferencedContainer = "container:GoogleMusicClient.xcodeproj">
+            BuildableName = "Google Music Client.app"
+            BlueprintName = "Google Music Client"
+            ReferencedContainer = "container:Google Music Client.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66B4BF4B189049AE00353166"
-            BuildableName = "GoogleMusicClient.app"
-            BlueprintName = "GoogleMusicClient"
-            ReferencedContainer = "container:GoogleMusicClient.xcodeproj">
+            BuildableName = "Google Music Client.app"
+            BlueprintName = "Google Music Client"
+            ReferencedContainer = "container:Google Music Client.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66B4BF4B189049AE00353166"
-            BuildableName = "GoogleMusicClient.app"
-            BlueprintName = "GoogleMusicClient"
-            ReferencedContainer = "container:GoogleMusicClient.xcodeproj">
+            BuildableName = "Google Music Client.app"
+            BlueprintName = "Google Music Client"
+            ReferencedContainer = "container:Google Music Client.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

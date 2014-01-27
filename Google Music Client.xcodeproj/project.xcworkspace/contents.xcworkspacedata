@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GoogleMusicClient.xcodeproj">
+      location = "self:Google Music Client.xcodeproj">
    </FileRef>
 </Workspace>

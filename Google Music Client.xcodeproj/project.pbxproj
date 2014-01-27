@@ -11,7 +11,6 @@
 		663F18CD1891AE5F00A1F026 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F18CC1891AE5F00A1F026 /* SPMediaKeyTap.m */; };
 		663F18D71891B00600A1F026 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F18D31891B00600A1F026 /* NSObject+SPInvocationGrabbing.m */; };
 		663F191B18953F0800A1F026 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F191A18953F0800A1F026 /* Carbon.framework */; };
-		663F191E1895A1D500A1F026 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 663F191D1895A1D500A1F026 /* icon.icns */; };
 		66B4BF50189049AE00353166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B4BF4F189049AE00353166 /* Cocoa.framework */; };
 		66B4BF5A189049AE00353166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66B4BF58189049AE00353166 /* InfoPlist.strings */; };
 		66B4BF5C189049AE00353166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4BF5B189049AE00353166 /* main.m */; };
@@ -43,22 +42,21 @@
 		663F18D21891B00600A1F026 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
 		663F18D31891B00600A1F026 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
 		663F191A18953F0800A1F026 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		663F191D1895A1D500A1F026 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
-		66B4BF4C189049AE00353166 /* GoogleMusicClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMusicClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B4BF4C189049AE00353166 /* Google Music Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Music Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B4BF4F189049AE00353166 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		66B4BF52189049AE00353166 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		66B4BF53189049AE00353166 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		66B4BF54189049AE00353166 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		66B4BF57189049AE00353166 /* GoogleMusicClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleMusicClient-Info.plist"; sourceTree = "<group>"; };
+		66B4BF57189049AE00353166 /* Google Music Client-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Google Music Client-Info.plist"; sourceTree = "<group>"; };
 		66B4BF59189049AE00353166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66B4BF5B189049AE00353166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		66B4BF5D189049AE00353166 /* GoogleMusicClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMusicClient-Prefix.pch"; sourceTree = "<group>"; };
+		66B4BF5D189049AE00353166 /* Google Music Client-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Google Music Client-Prefix.pch"; sourceTree = "<group>"; };
 		66B4BF5F189049AE00353166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		66B4BF61189049AE00353166 /* GMCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMCAppDelegate.h; sourceTree = "<group>"; };
 		66B4BF62189049AE00353166 /* GMCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMCAppDelegate.m; sourceTree = "<group>"; };
 		66B4BF65189049AE00353166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		66B4BF67189049AE00353166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		66B4BF6D189049AE00353166 /* GoogleMusicClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMusicClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B4BF6D189049AE00353166 /* Google Music ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Google Music ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B4BF6E189049AE00353166 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		66B4BF831890505C00353166 /* GMCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCWebView.h; sourceTree = "<group>"; };
 		66B4BF841890505C00353166 /* GMCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCWebView.m; sourceTree = "<group>"; };
@@ -107,13 +105,6 @@
 			path = SPInvocationGrabbing;
 			sourceTree = "<group>";
 		};
-		663F191C1895A1C500A1F026 /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Icon;
-			sourceTree = "<group>";
-		};
 		66B4BF43189049AE00353166 = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +117,8 @@
 		66B4BF4D189049AE00353166 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66B4BF4C189049AE00353166 /* GoogleMusicClient.app */,
-				66B4BF6D189049AE00353166 /* GoogleMusicClientTests.xctest */,
+				66B4BF4C189049AE00353166 /* Google Music Client.app */,
+				66B4BF6D189049AE00353166 /* Google Music ClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +153,6 @@
 				66B4BF62189049AE00353166 /* GMCAppDelegate.m */,
 				66B4BF64189049AE00353166 /* MainMenu.xib */,
 				66B4BF67189049AE00353166 /* Images.xcassets */,
-				663F191D1895A1D500A1F026 /* icon.icns */,
 				66B4BF56189049AE00353166 /* Supporting Files */,
 				66B4BF831890505C00353166 /* GMCWebView.h */,
 				66B4BF841890505C00353166 /* GMCWebView.m */,
@@ -175,11 +165,10 @@
 		66B4BF56189049AE00353166 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				663F191C1895A1C500A1F026 /* Icon */,
-				66B4BF57189049AE00353166 /* GoogleMusicClient-Info.plist */,
+				66B4BF57189049AE00353166 /* Google Music Client-Info.plist */,
 				66B4BF58189049AE00353166 /* InfoPlist.strings */,
 				66B4BF5B189049AE00353166 /* main.m */,
-				66B4BF5D189049AE00353166 /* GoogleMusicClient-Prefix.pch */,
+				66B4BF5D189049AE00353166 /* Google Music Client-Prefix.pch */,
 				66B4BF5E189049AE00353166 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -188,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66B4BF4B189049AE00353166 /* GoogleMusicClient */ = {
+		66B4BF4B189049AE00353166 /* Google Music Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66B4BF7D189049AE00353166 /* Build configuration list for PBXNativeTarget "GoogleMusicClient" */;
+			buildConfigurationList = 66B4BF7D189049AE00353166 /* Build configuration list for PBXNativeTarget "Google Music Client" */;
 			buildPhases = (
 				66B4BF48189049AE00353166 /* Sources */,
 				66B4BF49189049AE00353166 /* Frameworks */,
@@ -200,14 +189,14 @@
 			);
 			dependencies = (
 			);
-			name = GoogleMusicClient;
+			name = "Google Music Client";
 			productName = GoogleMusicClient;
-			productReference = 66B4BF4C189049AE00353166 /* GoogleMusicClient.app */;
+			productReference = 66B4BF4C189049AE00353166 /* Google Music Client.app */;
 			productType = "com.apple.product-type.application";
 		};
-		66B4BF6C189049AE00353166 /* GoogleMusicClientTests */ = {
+		66B4BF6C189049AE00353166 /* Google Music ClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66B4BF80189049AE00353166 /* Build configuration list for PBXNativeTarget "GoogleMusicClientTests" */;
+			buildConfigurationList = 66B4BF80189049AE00353166 /* Build configuration list for PBXNativeTarget "Google Music ClientTests" */;
 			buildPhases = (
 				66B4BF69189049AE00353166 /* Sources */,
 				66B4BF6A189049AE00353166 /* Frameworks */,
@@ -218,9 +207,9 @@
 			dependencies = (
 				66B4BF72189049AE00353166 /* PBXTargetDependency */,
 			);
-			name = GoogleMusicClientTests;
+			name = "Google Music ClientTests";
 			productName = GoogleMusicClientTests;
-			productReference = 66B4BF6D189049AE00353166 /* GoogleMusicClientTests.xctest */;
+			productReference = 66B4BF6D189049AE00353166 /* Google Music ClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66B4BF47189049AE00353166 /* Build configuration list for PBXProject "GoogleMusicClient" */;
+			buildConfigurationList = 66B4BF47189049AE00353166 /* Build configuration list for PBXProject "Google Music Client" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -251,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66B4BF4B189049AE00353166 /* GoogleMusicClient */,
-				66B4BF6C189049AE00353166 /* GoogleMusicClientTests */,
+				66B4BF4B189049AE00353166 /* Google Music Client */,
+				66B4BF6C189049AE00353166 /* Google Music ClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +255,6 @@
 				66B4BF68189049AE00353166 /* Images.xcassets in Resources */,
 				66B4BF60189049AE00353166 /* Credits.rtf in Resources */,
 				66B4BF66189049AE00353166 /* MainMenu.xib in Resources */,
-				663F191E1895A1D500A1F026 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +293,7 @@
 /* Begin PBXTargetDependency section */
 		66B4BF72189049AE00353166 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66B4BF4B189049AE00353166 /* GoogleMusicClient */;
+			target = 66B4BF4B189049AE00353166 /* Google Music Client */;
 			targetProxy = 66B4BF71189049AE00353166 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,9 +402,9 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GoogleMusicClient/GoogleMusicClient-Prefix.pch";
-				INFOPLIST_FILE = "GoogleMusicClient/GoogleMusicClient-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "GoogleMusicClient/Google Music Client-Prefix.pch";
+				INFOPLIST_FILE = "GoogleMusicClient/Google Music Client-Info.plist";
+				PRODUCT_NAME = "Google Music Client";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -429,9 +417,9 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GoogleMusicClient/GoogleMusicClient-Prefix.pch";
-				INFOPLIST_FILE = "GoogleMusicClient/GoogleMusicClient-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "GoogleMusicClient/Google Music Client-Prefix.pch";
+				INFOPLIST_FILE = "GoogleMusicClient/Google Music Client-Info.plist";
+				PRODUCT_NAME = "Google Music Client";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -452,7 +440,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GoogleMusicClientTests/GoogleMusicClientTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Google Music ClientTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -470,7 +458,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoogleMusicClient/GoogleMusicClient-Prefix.pch";
 				INFOPLIST_FILE = "GoogleMusicClientTests/GoogleMusicClientTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Google Music ClientTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -479,7 +467,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66B4BF47189049AE00353166 /* Build configuration list for PBXProject "GoogleMusicClient" */ = {
+		66B4BF47189049AE00353166 /* Build configuration list for PBXProject "Google Music Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66B4BF7B189049AE00353166 /* Debug */,
@@ -488,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66B4BF7D189049AE00353166 /* Build configuration list for PBXNativeTarget "GoogleMusicClient" */ = {
+		66B4BF7D189049AE00353166 /* Build configuration list for PBXNativeTarget "Google Music Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66B4BF7E189049AE00353166 /* Debug */,
@@ -497,7 +485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66B4BF80189049AE00353166 /* Build configuration list for PBXNativeTarget "GoogleMusicClientTests" */ = {
+		66B4BF80189049AE00353166 /* Build configuration list for PBXNativeTarget "Google Music ClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66B4BF81189049AE00353166 /* Debug */,
