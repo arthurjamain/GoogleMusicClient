@@ -11,6 +11,8 @@
 		663F18CD1891AE5F00A1F026 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F18CC1891AE5F00A1F026 /* SPMediaKeyTap.m */; };
 		663F18D71891B00600A1F026 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F18D31891B00600A1F026 /* NSObject+SPInvocationGrabbing.m */; };
 		663F191B18953F0800A1F026 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F191A18953F0800A1F026 /* Carbon.framework */; };
+		6643D7771896DAF700CD0EC7 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6643D7761896DAF700CD0EC7 /* Preferences.xib */; };
+		6643D77A1896DC3000CD0EC7 /* JFHotkeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6643D7791896DC3000CD0EC7 /* JFHotkeyManager.m */; };
 		66B4BF50189049AE00353166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B4BF4F189049AE00353166 /* Cocoa.framework */; };
 		66B4BF5A189049AE00353166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66B4BF58189049AE00353166 /* InfoPlist.strings */; };
 		66B4BF5C189049AE00353166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4BF5B189049AE00353166 /* main.m */; };
@@ -42,6 +44,9 @@
 		663F18D21891B00600A1F026 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
 		663F18D31891B00600A1F026 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
 		663F191A18953F0800A1F026 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		6643D7761896DAF700CD0EC7 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		6643D7781896DC3000CD0EC7 /* JFHotkeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHotkeyManager.h; sourceTree = "<group>"; };
+		6643D7791896DC3000CD0EC7 /* JFHotkeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHotkeyManager.m; sourceTree = "<group>"; };
 		66B4BF4C189049AE00353166 /* Google Music Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Music Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B4BF4F189049AE00353166 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		66B4BF52189049AE00353166 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -89,6 +94,8 @@
 		663F18CA1891AE5300A1F026 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				6643D7781896DC3000CD0EC7 /* JFHotkeyManager.h */,
+				6643D7791896DC3000CD0EC7 /* JFHotkeyManager.m */,
 				663F18CE1891B00600A1F026 /* SPInvocationGrabbing */,
 				663F18CB1891AE5F00A1F026 /* SPMediaKeyTap.h */,
 				663F18CC1891AE5F00A1F026 /* SPMediaKeyTap.m */,
@@ -152,6 +159,7 @@
 				66B4BF61189049AE00353166 /* GMCAppDelegate.h */,
 				66B4BF62189049AE00353166 /* GMCAppDelegate.m */,
 				66B4BF64189049AE00353166 /* MainMenu.xib */,
+				6643D7761896DAF700CD0EC7 /* Preferences.xib */,
 				66B4BF67189049AE00353166 /* Images.xcassets */,
 				66B4BF56189049AE00353166 /* Supporting Files */,
 				66B4BF831890505C00353166 /* GMCWebView.h */,
@@ -255,6 +263,7 @@
 				66B4BF68189049AE00353166 /* Images.xcassets in Resources */,
 				66B4BF60189049AE00353166 /* Credits.rtf in Resources */,
 				66B4BF66189049AE00353166 /* MainMenu.xib in Resources */,
+				6643D7771896DAF700CD0EC7 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B4BF63189049AE00353166 /* GMCAppDelegate.m in Sources */,
+				6643D77A1896DC3000CD0EC7 /* JFHotkeyManager.m in Sources */,
 				663F18D71891B00600A1F026 /* NSObject+SPInvocationGrabbing.m in Sources */,
 				663F18CD1891AE5F00A1F026 /* SPMediaKeyTap.m in Sources */,
 				663F18C61891A37800A1F026 /* GMCWindow.m in Sources */,

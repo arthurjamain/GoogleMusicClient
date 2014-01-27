@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
 #import "SPMediaKeyTap.h"
+#import "JFHotkeyManager.h"
 
 @interface GMCApp : NSApplication
 @end
