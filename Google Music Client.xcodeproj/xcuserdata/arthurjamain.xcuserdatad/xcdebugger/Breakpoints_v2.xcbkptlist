@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoogleMusicClient/GMCAppDelegate.h"
-            timestampString = "412540095.957802"
+            timestampString = "412545444.476587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11">
+            startingLineNumber = "12"
+            endingLineNumber = "12">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,12 +24,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoogleMusicClient/GMCAppDelegate.m"
-            timestampString = "412541513.663948"
+            timestampString = "412550447.838224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "-sendKey:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoogleMusicClient/GMCPreferencesWindowController.m"
+            timestampString = "412549317.220323"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-initInputs"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoogleMusicClient/GMCTextField.m"
+            timestampString = "412562853.770097"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-becomeFirstResponder"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

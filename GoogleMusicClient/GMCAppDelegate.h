@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
+#import "GMCPreferencesWindowController.h"
 #import "SPMediaKeyTap.h"
 #import "JFHotkeyManager.h"
 
@@ -17,7 +18,10 @@
 @interface GMCAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) SPMediaKeyTap *keyTap;
+@property (assign) GMCPreferencesWindowController *preferences;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet WebView *webView;
+
+-(IBAction)openPreferences:(id)sender;
 
 @end

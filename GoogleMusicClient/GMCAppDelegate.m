@@ -23,7 +23,7 @@
 
 @implementation GMCAppDelegate
 
-@synthesize keyTap, webView;
+@synthesize keyTap, webView, preferences;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -39,6 +39,14 @@
     
     JFHotkeyManager *hkm = [[JFHotkeyManager alloc] init];
     [hkm bind:@"command shift up" target:self action:@selector(shortcutInvoked)];
+}
+
+-(IBAction)openPreferences:(id)sender
+{
+    if(!preferences) {
+        preferences = [[GMCPreferencesWindowController alloc] initWithWindowNibName:@"GMCPreferencesWindowController"];
+    }
+    [preferences showWindow:self];
 }
 
 -(void)shortcutInvoked

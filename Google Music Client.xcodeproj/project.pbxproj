@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660B25DF189702380099B5EC /* GMCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B25DE189702380099B5EC /* GMCTextField.m */; };
+		660B25E1189707A40099B5EC /* custom_style.css in Resources */ = {isa = PBXBuildFile; fileRef = 660B25E0189707A40099B5EC /* custom_style.css */; };
 		663F18C61891A37800A1F026 /* GMCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F18C51891A37800A1F026 /* GMCWindow.m */; };
 		663F18CD1891AE5F00A1F026 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F18CC1891AE5F00A1F026 /* SPMediaKeyTap.m */; };
 		663F18D71891B00600A1F026 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F18D31891B00600A1F026 /* NSObject+SPInvocationGrabbing.m */; };
 		663F191B18953F0800A1F026 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F191A18953F0800A1F026 /* Carbon.framework */; };
-		6643D7771896DAF700CD0EC7 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6643D7761896DAF700CD0EC7 /* Preferences.xib */; };
 		6643D77A1896DC3000CD0EC7 /* JFHotkeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6643D7791896DC3000CD0EC7 /* JFHotkeyManager.m */; };
+		6643D7851896ED9800CD0EC7 /* GMCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6643D7831896ED9800CD0EC7 /* GMCPreferencesWindowController.m */; };
+		6643D7861896ED9800CD0EC7 /* GMCPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6643D7841896ED9800CD0EC7 /* GMCPreferencesWindowController.xib */; };
 		66B4BF50189049AE00353166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B4BF4F189049AE00353166 /* Cocoa.framework */; };
 		66B4BF5A189049AE00353166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66B4BF58189049AE00353166 /* InfoPlist.strings */; };
 		66B4BF5C189049AE00353166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4BF5B189049AE00353166 /* main.m */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660B25DD189702380099B5EC /* GMCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCTextField.h; sourceTree = "<group>"; };
+		660B25DE189702380099B5EC /* GMCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCTextField.m; sourceTree = "<group>"; };
+		660B25E0189707A40099B5EC /* custom_style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = custom_style.css; sourceTree = "<group>"; };
 		663F18C41891A37800A1F026 /* GMCWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCWindow.h; sourceTree = "<group>"; };
 		663F18C51891A37800A1F026 /* GMCWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCWindow.m; sourceTree = "<group>"; };
 		663F18CB1891AE5F00A1F026 /* SPMediaKeyTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMediaKeyTap.h; sourceTree = "<group>"; };
@@ -44,9 +50,11 @@
 		663F18D21891B00600A1F026 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
 		663F18D31891B00600A1F026 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
 		663F191A18953F0800A1F026 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		6643D7761896DAF700CD0EC7 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		6643D7781896DC3000CD0EC7 /* JFHotkeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHotkeyManager.h; sourceTree = "<group>"; };
 		6643D7791896DC3000CD0EC7 /* JFHotkeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHotkeyManager.m; sourceTree = "<group>"; };
+		6643D7821896ED9800CD0EC7 /* GMCPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCPreferencesWindowController.h; sourceTree = "<group>"; };
+		6643D7831896ED9800CD0EC7 /* GMCPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCPreferencesWindowController.m; sourceTree = "<group>"; };
+		6643D7841896ED9800CD0EC7 /* GMCPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMCPreferencesWindowController.xib; sourceTree = "<group>"; };
 		66B4BF4C189049AE00353166 /* Google Music Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Music Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B4BF4F189049AE00353166 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		66B4BF52189049AE00353166 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -112,6 +120,22 @@
 			path = SPInvocationGrabbing;
 			sourceTree = "<group>";
 		};
+		6643D7801896ED4700CD0EC7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				66B4BF831890505C00353166 /* GMCWebView.h */,
+				66B4BF841890505C00353166 /* GMCWebView.m */,
+				663F18C41891A37800A1F026 /* GMCWindow.h */,
+				663F18C51891A37800A1F026 /* GMCWindow.m */,
+				6643D7821896ED9800CD0EC7 /* GMCPreferencesWindowController.h */,
+				6643D7831896ED9800CD0EC7 /* GMCPreferencesWindowController.m */,
+				6643D7841896ED9800CD0EC7 /* GMCPreferencesWindowController.xib */,
+				660B25DD189702380099B5EC /* GMCTextField.h */,
+				660B25DE189702380099B5EC /* GMCTextField.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		66B4BF43189049AE00353166 = {
 			isa = PBXGroup;
 			children = (
@@ -155,17 +179,13 @@
 		66B4BF55189049AE00353166 /* GoogleMusicClient */ = {
 			isa = PBXGroup;
 			children = (
+				6643D7801896ED4700CD0EC7 /* views */,
 				663F18CA1891AE5300A1F026 /* lib */,
 				66B4BF61189049AE00353166 /* GMCAppDelegate.h */,
 				66B4BF62189049AE00353166 /* GMCAppDelegate.m */,
 				66B4BF64189049AE00353166 /* MainMenu.xib */,
-				6643D7761896DAF700CD0EC7 /* Preferences.xib */,
 				66B4BF67189049AE00353166 /* Images.xcassets */,
 				66B4BF56189049AE00353166 /* Supporting Files */,
-				66B4BF831890505C00353166 /* GMCWebView.h */,
-				66B4BF841890505C00353166 /* GMCWebView.m */,
-				663F18C41891A37800A1F026 /* GMCWindow.h */,
-				663F18C51891A37800A1F026 /* GMCWindow.m */,
 			);
 			path = GoogleMusicClient;
 			sourceTree = "<group>";
@@ -178,6 +198,7 @@
 				66B4BF5B189049AE00353166 /* main.m */,
 				66B4BF5D189049AE00353166 /* Google Music Client-Prefix.pch */,
 				66B4BF5E189049AE00353166 /* Credits.rtf */,
+				660B25E0189707A40099B5EC /* custom_style.css */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,11 +280,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660B25E1189707A40099B5EC /* custom_style.css in Resources */,
 				66B4BF5A189049AE00353166 /* InfoPlist.strings in Resources */,
 				66B4BF68189049AE00353166 /* Images.xcassets in Resources */,
+				6643D7861896ED9800CD0EC7 /* GMCPreferencesWindowController.xib in Resources */,
 				66B4BF60189049AE00353166 /* Credits.rtf in Resources */,
 				66B4BF66189049AE00353166 /* MainMenu.xib in Resources */,
-				6643D7771896DAF700CD0EC7 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6643D7851896ED9800CD0EC7 /* GMCPreferencesWindowController.m in Sources */,
+				660B25DF189702380099B5EC /* GMCTextField.m in Sources */,
 				66B4BF63189049AE00353166 /* GMCAppDelegate.m in Sources */,
 				6643D77A1896DC3000CD0EC7 /* JFHotkeyManager.m in Sources */,
 				663F18D71891B00600A1F026 /* NSObject+SPInvocationGrabbing.m in Sources */,

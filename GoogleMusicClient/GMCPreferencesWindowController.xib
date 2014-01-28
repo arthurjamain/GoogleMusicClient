@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GMCPreferencesWindowController">
+            <connections>
+                <outlet property="checkMediaKeys" destination="3XN-bX-RVJ" id="ftZ-sl-Pl5"/>
+                <outlet property="checkSystemShortcut" destination="mYS-Oi-mIc" id="kKO-Xc-aW4"/>
+                <outlet property="textSystemShortcut" destination="NBs-fy-vGT" id="uTt-nP-wGA"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="217" height="222"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="217" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3XN-bX-RVJ">
+                        <rect key="frame" x="18" y="157" width="139" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Media Keys" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="uhh-3l-jLg">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleMediaKeys:" target="-2" id="vda-pp-Dtl"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYS-Oi-mIc">
+                        <rect key="frame" x="18" y="125" width="199" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="System Shortcut" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cbW-qE-NhZ">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleSystemShortcut:" target="-2" id="bbA-tl-weY"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBs-fy-vGT" customClass="GMCTextField">
+                        <rect key="frame" x="20" y="88" width="96" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Record" bezelStyle="round" id="JiO-H5-xm8">
+                            <font key="font" size="9" name="LucidaGrande"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="qtL-Qc-trk" id="hsv-1t-t9S"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-Qc-trk">
+                        <rect key="frame" x="121" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h1x-vj-Qqb">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="saveAndQuit:" target="-2" id="qki-JF-0TX"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+                <outlet property="initialFirstResponder" destination="qtL-Qc-trk" id="Rki-Xh-ri8"/>
+            </connections>
+        </window>
+    </objects>
+</document>
