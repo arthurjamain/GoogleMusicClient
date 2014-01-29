@@ -10,11 +10,4 @@
 
 @implementation GMCWindow
 
-
-- (BOOL)windowShouldClose:(id)sender {
-    
-    [self orderOut:self];
-    return NO;
-    
-}
 @end

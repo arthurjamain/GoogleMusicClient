@@ -439,6 +439,7 @@
 				GCC_PREFIX_HEADER = "GoogleMusicClient/Google Music Client-Prefix.pch";
 				INFOPLIST_FILE = "GoogleMusicClient/Google Music Client-Info.plist";
 				PRODUCT_NAME = "Google Music Client";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -454,6 +455,7 @@
 				GCC_PREFIX_HEADER = "GoogleMusicClient/Google Music Client-Prefix.pch";
 				INFOPLIST_FILE = "GoogleMusicClient/Google Music Client-Info.plist";
 				PRODUCT_NAME = "Google Music Client";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

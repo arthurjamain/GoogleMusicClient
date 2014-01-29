@@ -14,6 +14,9 @@
 @property (assign) IBOutlet NSButton *checkSystemShortcut;
 @property (assign) IBOutlet NSTextField *textSystemShortcut;
 
+-(void)setShortcut;
+-(void)initInputs;
+
 -(IBAction)toggleMediaKeys:(id)sender;
 -(IBAction)toggleSystemShortcut:(id)sender;
 -(IBAction)saveAndQuit:(id)sender;

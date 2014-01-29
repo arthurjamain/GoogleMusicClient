@@ -23,7 +23,7 @@
 
 @implementation GMCAppDelegate
 
-@synthesize keyTap, webView, preferences;
+@synthesize keyTap, webView, preferences, window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -31,14 +31,65 @@
     [[[self webView] mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://music.google.com"]]];
     
     keyTap = [[SPMediaKeyTap alloc] initWithDelegate:self];
-	if([SPMediaKeyTap usesGlobalMediaKeyTap]) {
-		[keyTap startWatchingMediaKeys];
-	} else {
-		NSLog(@"Media key monitoring disabled");
+    hkm = [[JFHotkeyManager alloc] init];
+    
+    [self refreshMediakeys];
+    [self refreshSystemShortcut];
+}
+
+-(void)refreshSystemShortcut
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger systemshortcut = [[defaults valueForKey:@"systemshortcut"] integerValue];
+    NSMutableDictionary *shortcut = [defaults valueForKey:@"shortcut"];
+    if (systemshortcut && shortcut != nil) {
+        NSMutableDictionary *modifiers = [shortcut valueForKey:@"modifiers"];
+        
+        int modInt = 0;
+        modInt += [[modifiers valueForKey:@"cmd"] integerValue];
+        modInt += [[modifiers valueForKey:@"ctrl"] integerValue];
+        modInt += [[modifiers valueForKey:@"alt"] integerValue];
+        modInt += [[modifiers valueForKey:@"shift"] integerValue];
+        
+        NSLog(@"%d", modInt);
+        
+        if (&hkmRef != nil) {
+            [hkm unbind:hkmRef];
+        }
+        hkmRef = [hkm
+                  bindKeyRef:       [[shortcut valueForKey:@"key"] integerValue]
+                  withModifiers:    modInt
+                  target:           self
+                  action:           @selector(shortcutInvoked)];
+    } else {
+        if (&hkmRef != nil) {
+            [hkm unbind:hkmRef];
+        }
     }
     
-    JFHotkeyManager *hkm = [[JFHotkeyManager alloc] init];
-    [hkm bind:@"command shift up" target:self action:@selector(shortcutInvoked)];
+}
+-(void)refreshMediakeys
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger mediakeys = [[defaults valueForKey:@"mediakeys"] integerValue];
+    
+    if (mediakeys) {
+        if([SPMediaKeyTap usesGlobalMediaKeyTap]) {
+            [keyTap startWatchingMediaKeys];
+        } else {
+            NSLog(@"Media key monitoring disabled");
+        }
+    } else {
+        [keyTap stopWatchingMediaKeys];
+    }
+}
+
+-(void)preferenceWindowWillClose
+{
+    [[[self preferences] textSystemShortcut] resignFirstResponder];
+    [self refreshSystemShortcut];
+    [self refreshMediakeys];
 }
 
 -(IBAction)openPreferences:(id)sender
@@ -47,12 +98,28 @@
         preferences = [[GMCPreferencesWindowController alloc] initWithWindowNibName:@"GMCPreferencesWindowController"];
     }
     [preferences showWindow:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(preferenceWindowWillClose)
+                                                 name:NSWindowWillCloseNotification
+                                               object:[preferences window]];
 }
 
 -(void)shortcutInvoked
 {
-    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
-    [[self window] orderFrontRegardless];
+    
+    if ([[preferences window] isVisible]) {
+        [preferences initInputs];
+        [[preferences window] makeFirstResponder:nil];
+        return;
+    }
+    
+    if (![[NSApplication sharedApplication] isHidden]) {
+        [window orderOut:self];
+        [[NSApplication sharedApplication] hide:self];
+    } else {
+        [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+        [window orderFrontRegardless];
+    }
 }
 
 -(void)mediaKeyTap:(SPMediaKeyTap*)keyTap receivedMediaKeyEvent:(NSEvent*)event;

@@ -34,22 +34,30 @@
     [self initInputs];
 }
 
-
 - (void)initInputs
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSInteger systemshortcut = [[defaults valueForKey:@"systemshortcut"] integerValue];
     NSInteger mediakeys = [[defaults valueForKey:@"mediakeys"] integerValue];
-    
+    NSMutableDictionary *shortcut = [defaults valueForKey:@"shortcut"];
+
     [checkSystemShortcut setState:systemshortcut];
     [checkMediaKeys setState:mediakeys];
     [textSystemShortcut setEnabled:systemshortcut];
+    if (shortcut != nil) {
+        [textSystemShortcut setStringValue:[shortcut valueForKey:@"printableKey"]];
+    }
     [textSystemShortcut setDelegate:self];
 }
 
--(void)keyUp:(NSEvent *)theEvent
+-(void)setShortcut:(NSMutableDictionary *)shortcut
 {
-    [[self window] makeFirstResponder:[textSystemShortcut nextValidKeyView]];
+    [textSystemShortcut performSelector:@selector(setStringValue:) withObject:[shortcut valueForKey:@"printableKey"] afterDelay:0.01];
+    [[self window] performSelector:@selector(makeFirstResponder:) withObject:[[self window] nextResponder] afterDelay:0.02];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:shortcut forKey:@"shortcut"];
+    [defaults synchronize];
 }
 
 -(IBAction)toggleMediaKeys:(id)sender
@@ -66,8 +74,11 @@
     [defaults setValue:[NSString stringWithFormat:@"%ld", (long)[checkSystemShortcut state]] forKey:@"systemshortcut"];
     [defaults synchronize];
 }
+
 -(IBAction)saveAndQuit:(id)sender
 {
-    [[self window] orderOut:self];
+    [[self window] makeFirstResponder:nil];
+    [[self window] close];
 }
+
 @end

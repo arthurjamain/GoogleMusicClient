@@ -7,11 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "GMCPreferencesWindowController.h"
+#import "JFHotkeyManager.h"
 
 @interface GMCTextField : NSTextField {
 
     NSString *displayText;
-
+    GMCPreferencesWindowController *parent;
+    
 }
 @end
